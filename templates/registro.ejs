@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../imagens/ico.png">
+    
+    <title>REGISTRO</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">		
+    <header>
+		<h1 class="title">SISTEMA WEB - CONEMAD-PA</h1>
+		<img src="../imagens/logo.png" class="img-fluid" alt="Imagem responsiva">
+    </header>
+    
+        <div class="formContainer">
+            <h2 class="mb">Acesso ao Sistema</h2>			
+            <form action="/registro-sistema" method="post">
+								
+				<input id="name" name="name" type="text" placeholder="Nome">				
+                <input id="email" name="email" type="text" placeholder="email">
+                <select name="place">
+                    <option value="" selected>Selecione o Campo</option>					    
+				    <option value="IMADEMMEPA">IMADEMMEPA</option>
+					<option value="CADEX (XINGUARA)">CADEX (XINGUARA)</option>
+					<option value="CIMADER (REDENÇÃO)">CIMADER (REDENÇÃO)</option>
+					<option value="CADEC (CURIONÓPOLIS)">CADEC (CURIONÓPOLIS)</option>
+					<option value="CADEMAR (MARABAR)">CADEMAR (MARABAR)</option>	
+					<option value="CADET (TUCUMÃ)">CADET (TUCUMÃ)</option>
+					<option value="CADEPA (PARAUAPEBAS)">CADEPA (PARAUAPEBAS)</option>
+					<option value="CADESDA">CADESDA (SÃO DOMINGOS DO ARAGUAIA)</option>
+					<option value="CADERM (RIO MARIA)">CADERM (RIO MARIA)</option>
+					<option value="CADECON ">CADECON (CONCEIÇÃO DO ARAGUAIA)</option>
+					<option value="CADESA">CADESA (SANTANA DO ARAGUAIA)</option>
+					<option value="CADEON">CADEON (OURILÂNDIA DO NORTE)</option>
+					<option value="CADESFEX">CADESFEX (SÃO FÉLIX DO XINGU)</option>
+					<option value="CADECA">CADECA (ELDORADO DOS CARAJAS)</option>
+					<option value="CADEIT">CADEIT (ITUPIRANGA)</option>
+					<option value="CADEJA">CADEJA (JACUNDA)</option>
+					<option value="CADEGO">CADEGO (GOIANESIA)</option>
+					<option value="CIMADECANC">CIMADECANC (CANAA DOS CARAJAS)</option>
+					<option value="CADECNO">CADECNO (CUMARU DO NORTE)</option>
+					<option value="CADEVIMA">CADEVIMA (VILA MANDI)</option>
+					<option value="CADEPAD">CADEPAD(PAU D'ARCO)</option>
+					<option value="CADES">CADES (SAPUCAIA)</option>
+					<option value="CADEFA">CADEFA (FLORESTA DO ARAGUAIA)</option>
+					<option value="CADEP">CADEP (PIÇARRA)</option>
+					<option value="CADEAAN">CADEAAN (AGUA AZUL DO NORTE)</option>
+					<option value="CADEEX">CADEEX (ESTRELA DO XINGU)</option>
+					<option value="CADEBEV">CADEBEV (BELA VISTA)</option>
+					<option value="CADETEI">CADETEI (TEILANDIA)</option>
+					<option value="CADESUD">CADESUD (SUDOESTE)</option>
+					<option value="CADEPRI">CADEPRI (PRIMAVERA)</option>
+					<option value="CADEVIPAC">CADEVIPAC (VILA PARAISO DOS CARAJAS)</option>
+					<option value="CADENOPA">CADENOPA (NOVO PARAISO)</option>
+					<option value="CADEVICAN">CADEVICAN (VILA CANAAN)</option>
+					<option value="CADEMON">CADEMON (MORADA NOVA)</option>
+					<option value="CADEBOJET">CADEBOJET (BOM JESUS DO TOCANTINS)</option>
+					<option value="CADENOI">CADENOI (NOVA IPIXUNA)</option>
+					<option value="CADEBEGA">CADEBEGA (BREJO GRANDE DO ARAGUAIA)</option>
+					<option value="CADEPAPA">CADEPAPA (PALESTINA DO PARÁ)</option>
+					<option value="CADESFE">CADESFE (VILA SANTA FÉ)</option>
+					<option value="CADEVU">CADEVU (VILA UNIÃO)</option>
+					<option value="CADECRUS">CADECRUS (CRUZEIRO DO SUL)</option>
+					<option value="CADEVICON">CADEVICON (VITORIA DA CONQUISTA)</option>
+					<option value="CIADECAJAZ">CIADECAJAZ (CAJAZEIRAS)</option>
+					<option value="CADEDIV">CADEDIV (DIVINOPOLIS)</option>
+					<option value="CADEABEF">CADEABEF (ABEL FIGUEREDO)</option>
+					<option value="CADERPA">CADERPA (RONDON DO PARÁ)</option>
+					<option value="CADETUC">CADETUC (TUCURUI)</option>
+					<option value="CADESGA">CADESGA (SÃO GERALDO DO ARAGUAIA)</option>
+					<option value="CADEVIC">CADEVIC (VILA CANOPUS)</option>
+					<option value="CADENOCAN">CADENOCAN (NOVA CANADÁ)</option>
+					<option value="CADESJA">CADESJA (SÃO JOÃO DO ARAGUAIA)</option>
+					<option value="CADEPCI">CADEPCI (PISTA DA CIEX)</option>
+					<option value="CADEVIT">CADEVIT (PARAUAPEBAS I)</option>
+					<option value="CADESFMAR">CADESFMAR (SÃO FELIX MARABÁ)</option>
+					<option value="CIADEPAN">CIADEPAN (PARAUAPEBAS II)</option>
+					<option value="CADELT">CADELT (LIDOESTE)</option>
+					<option value="CADEVIJON">CADEVIJON (VILA JOCON)</option>
+					<option value="CADEVIRM">CADEVIRM (RIO VERMELHO)</option>
+					<option value="CADENE">CADENE (NEREU)</option>
+					<option value="CADEVIO">CADEVIO (VILA OZIEL)</option>
+					<option value="CADEMPAVI">CADEMPAVI (PARAUAPEBAS III)</option>
+					<option value="CADEFAM">CADEFAM (PARAUAPEBAS IV)</option>
+					<option value="CADEVIPLAN">CADEVIPLAN (VILA PLANALTO)</option>
+					<option value="CIADECA">CIADECA (ELDORADO DOS CARAJAS II)</option>
+					<option value="CADEBREM">CADEBREM (BREJO DO MEIO)</option>
+					<option value="CADEVISS">CADEVISS (VILA SÃO SEBASTIÃO)</option>
+					<option value="CADEAX">CADEAX (ALIANÇA DO XINGU)</option>
+					<option value="CADEVISA">CADEVISA (VILA SANTANA)</option>
+					<option value="CADEVILOV">CADEVILOV (CADEVILOV)</option>
+					<option value="CADEVIB">CADEVIB (VILA BETEL)</option>
+					<option value="CADEAB">CADEAB (ALTO BONITO)</option>
+					<option value="CADEVISMA">CADEVISMA (VILA SANTA MARIA)</option>
+					<option value="CADEVICAPA">CADEVICAPA (VILA CAPISTRANO DE ABREU)</option>
+					<option value="CADESJOA">CADESJOA (SÃO JOSE DO ARAGUAIA)</option>
+					<option value="CIADEPA">CIADEPA (PARAUAPEBAS V)</option>
+					<option value="CADEVINAP">CADEVINAP (VILA NAZARÉ DOS PATOS)</option>
+					<option value="CADENOR">CADENOR (NOVO REPARTIMENTO)</option>
+					<option value="CADESPA">CADESPE (SERRA PELADA)</option>
+					<option value="CADESAW">CADESAW (SAWANOPOLIS)</option>
+					<option value="CADEVIPD">CADEVIPD (VILA PLANO DOURADO)</option>
+					<option value="CADESMAB">CADESMAB (SANTA MARIA DAS BARREIRAS)</option>
+					<option value="CADEESPA">CADEESPA</option>
+					<option value="CADEB">CADEB (BANACH)</option>
+					<option value="CADENES">CADENES (NOVA ESPERANÇA)</option>
+					<option value="CADEPMIF">CADEPMIF (CANAA DOS CARAJAS II)</option>
+					<option value="CIADEC">CIADEC (CANAA DOS CARAJAS III)</option>
+					<option value="CADEVIMEN">CADEVIMEN (VILA MENDONÇA)</option>
+					<option value="IADEBEC">IADEBEC (PARAUAPEBAS VI)</option>
+					<option value="CADEMICF">CADEMICF (PARAUAPEBAS VIII)</option>
+					<option value="CADEBREB">CADEBREB (BREU BRANCO)</option>
+					<option value="CADEPAS">CADEPAS (PALMARES SUL)</option>
+					<option value="CADEANAP">CADEANAP (ANAPU)</option>
+					<option value="CADEMA">CADEMA (MARACAJÁ)</option>
+					<option value="CADEBEM">CADEBEM (BELO MONTE)</option>
+					<option value="CADEPAFO">CADEPAFO (PAULO FONTELES)</option>
+					<option value="CADEPPA">CADEPPA (PALMARES PARAUAPEBAS)</option>
+					<option value="CIADEPAFD">CIADEPAFD (CANAA DOS CARAJAS IV)</option>
+					<option value="CIADETUC">CIADETUC (TUCURUI II)</option>
+					<option value="CADECAMP">CADECAMP (CAMPIN)</option>
+					<option value="CADEA">CADEA (ALACILANDIA)</option>
+					<option value="CADESUB">CADESUB (VILA SURUBIM)</option>
+                </select>
+                <input type="submit" value="ENTRAR">
+            </form>
+        </div>       
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+const mongoose = require('mongoose')
+
+//Schema de Obreiros
+const obreiroSchema = new mongoose.Schema({
+
+    matricula: Number,
+    dataCadastro: Date,
+    ativo: Boolean,
+    foto: String,
+    nome: String,
+    campo: String,
+    codCampo: Number,
+    atvEclesiastica: String,
+    dataSeparacao: Date,
+    sexo: String,
+    dataNascimento: Date,
+    endereco: String,
+    numero: String,
+    bairro: String,
+    cidade: String,
+    estado: String,
+    uf: String,
+    pais: String,
+    cep: String,
+    profissao: String,
+    fone: String,
+    identidade: Number,
+    orgaoExpedidor: String,
+    dataExpedicao: Date,
+    tituloEleitoral: Number,
+    zona: Number,
+    sessao: Number,
+    cpf: String,
+    estadoCivil: String,
+    escolaridade: String,
+    cidadeNascimento: String,
+    estadoNascimento: String,
+    igrejaOrigem: String,
+    nomePai: String,
+    nomeMae: String,
+    nomeConjuje: String,
+    dataConversao: Date,
+    localConvercao: String,
+    dataBatismoAguas: Date,
+    localBatAgua: String,
+    dataBatismoEspiritoSanto: Date,
+    localBatEspSanto: String,
+})
+
+//Modelo de Obreiros
+module.exports = mongoose.model('Obreiro', obreiroSchema)
