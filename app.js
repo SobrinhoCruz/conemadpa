@@ -8,9 +8,6 @@ const obreiroRouter = require('./routers/obreiroRouter')
 
 //Diretório de arquivos do site - staticos.
 app.use(express.static(path.join(__dirname, 'templates')))
-app.use(express.static(path.join(__dirname, 'imagens')))
-app.use(express.static(path.join(__dirname, 'css')))
-app.use(express.static(path.join(__dirname, 'uploads/documentos')))
 
 //Conexão com o banco de dados
 mongoose.connect('mongodb://localhost/conemadpa',
